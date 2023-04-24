@@ -50,7 +50,7 @@ class TikTakToeGame {
                             getCompsPositions().contains(playerInput) ||
                             playerInput > 9 || playerInput < 1) {
                         System.out.println("This cell invalid or just taken. Please, make your choice again.");
-                        playerInput = SCANNER.nextInt();
+                        playerInput = getSCANNER().nextInt();
                     }
                 }
 
@@ -118,7 +118,7 @@ class TikTakToeGame {
             case 7 -> board[4][0] = symbol;
             case 8 -> board[4][2] = symbol;
             case 9 -> board[4][4] = symbol;
-            default -> System.out.println("Некорректный ввод, сделайте выбор еще раз");
+            default -> System.out.println("Incorrect input. Make a choice again");
         }
     }
 
